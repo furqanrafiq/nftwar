@@ -1,38 +1,91 @@
-.App {
+@font-face {
+  font-family: "PixeloidSans";
+  src: local("PixeloidSans"),
+    url("../src/assets/fonts/PixeloidSans.ttf") format("truetype");
+  /* font-weight: bold; */
+}
+
+body {
+  font-family: 'PixeloidSans' !important;
+}
+
+p {
+  margin: 0px !important;
+}
+
+.main-section {
+  background-image: url('../src/assets/img/Nft_war_banner.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-section {
+  position: absolute;
+  background-color: black;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  padding: 40px 70px;
+  border-radius: 20px;
   text-align: center;
+  left: 50%;
+  width: 30%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.color-white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.color-red {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.color-blue {
+  color: #8584f7;
+}
+
+.color-gray {
+  color: gray;
+}
+
+.count-down-red .ant-statistic-content-value {
+  color: red;
+  font-family: 'PixeloidSans';
+  font-size: 15px;
+}
+
+.count-down-gray .ant-statistic-content-value {
+  color: gray;
+  font-family: 'PixeloidSans';
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-section {
+    width: 35%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .inner-section {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .inner-section {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .inner-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .inner-section {
+    width: 95%;
   }
 }
